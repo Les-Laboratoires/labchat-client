@@ -1,0 +1,34 @@
+{
+  "name": "lab",
+  "version": "1.0.0",
+  "description": "chat client by Les Laboratoire JS",
+  "main": "dist/index.js",
+  "dependencies": {
+    "electron": "^11.0.3",
+    "express": "^4.17.1",
+    "remove": "^0.1.5",
+    "socket.io": "^3.0.3"
+  },
+  "devDependencies": {
+    "@types/electron": "^1.6.10",
+    "prettier": "^2.2.0",
+    "standard": "^16.0.3",
+    "typescript": "^4.1.2"
+  },
+  "scripts": {
+    "build": "tsc",
+    "format": "standard --fix src/*",
+    "start": "tsc && electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Les-Laboratoires-JS/Lab.git"
+  },
+  "keywords": [],
+  "author": "Les-Laboratoires-JS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Les-Laboratoires-JS/Lab/issues"
+  },
+  "homepage": "https://github.com/Les-Laboratoires-JS/Lab#readme"
+}
