@@ -1,34 +1,35 @@
 {
-  "name": "lab",
+  "name": "svelte-app",
   "version": "1.0.0",
-  "description": "chat client by Les Laboratoire JS",
-  "main": "dist/index.js",
-  "dependencies": {
-    "electron": "^11.0.3",
-    "express": "^4.17.1",
-    "remove": "^0.1.5",
-    "socket.io": "^3.0.3"
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "start": "sirv public",
+    "validate": "svelte-check"
   },
   "devDependencies": {
-    "@types/electron": "^1.6.10",
-    "prettier": "^2.2.0",
-    "standard": "^16.0.3",
-    "typescript": "^4.1.2"
+    "@fullhuman/postcss-purgecss": "^3.0.0",
+    "@rollup/plugin-commonjs": "^16.0.0",
+    "@rollup/plugin-node-resolve": "^10.0.0",
+    "@rollup/plugin-typescript": "^6.0.0",
+    "@tsconfig/svelte": "^1.0.0",
+    "postcss-load-config": "^3.0.0",
+    "rollup": "^2.3.4",
+    "rollup-plugin-css-only": "^3.0.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-svelte": "^7.0.0",
+    "rollup-plugin-terser": "^7.0.0",
+    "sirv": "^1.0.7",
+    "sirv-cli": "^1.0.8",
+    "svelte": "^3.0.0",
+    "svelte-check": "^1.0.0",
+    "svelte-preprocess": "^4.6.1",
+    "tslib": "^2.0.0",
+    "typescript": "^3.9.3"
   },
-  "scripts": {
-    "build": "tsc",
-    "format": "standard --fix src/*",
-    "start": "tsc && electron ."
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Les-Laboratoires-JS/Lab.git"
-  },
-  "keywords": [],
-  "author": "Les-Laboratoires-JS",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Les-Laboratoires-JS/Lab/issues"
-  },
-  "homepage": "https://github.com/Les-Laboratoires-JS/Lab#readme"
+  "dependencies": {
+    "autoprefixer": "^9.8.6",
+    "postcss": "^7.0.35",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.1"
+  }
 }
