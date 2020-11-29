@@ -1,0 +1,2 @@
+
+<!-- Représente un salon -->
