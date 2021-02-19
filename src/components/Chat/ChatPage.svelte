@@ -1,0 +1,3 @@
+<!--
+Element central du chat.
+-->
