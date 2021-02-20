@@ -1,38 +1,28 @@
 <script lang="ts">
     import Tailwindcss from "../Tailwindcss.svelte";
+    import GuildLinkList from "../components/GuildLinkList.svelte";
+    import ChannelList from "../components/ChannelList.svelte";
+    import ChatPage from "../components/Chat/ChatPage.svelte";
+    import MemberList from "../components/MemberList.svelte";
 
     let name: string = "Poro";
 </script>
 
 <style>
-    main {
-        text-align: center;
-        padding: 1em;
-        max-width: 240px;
-        margin: 0 auto;
-    }
-
-    h1 {
-        color: #ff3e00;
-        text-transform: uppercase;
-        font-size: 4em;
-        font-weight: 100;
-    }
-
-    @media (min-width: 640px) {
-        main {
-            max-width: none;
-        }
-    }
 </style>
 
-<Tailwindcss />
-<main>
-    <h1>Hello {name}!</h1>
-    <p>
-        Visit the
-        <a href="https://svelte.dev/tutorial">Svelte tutorial</a>
-        to learn how to build Svelte apps..
-    </p>
-    <div class="mt-10 text-6xl text-emerald-500">Salut les Poros</div>
+<Tailwindcss/>
+<main class="bg-gray-600  bg-green-800  w-full h-full    flex">
+    <div>
+        <GuildLinkList/>
+    </div>
+    <div>
+        <ChannelList/>
+    </div>
+    <div class="flex-grow">
+        <ChatPage/>
+    </div>
+    <div>
+        <MemberList/>
+    </div>
 </main>

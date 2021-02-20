@@ -8,7 +8,12 @@ Element central du chat.
 </script>
 
 
-<div>
-    <ChatFrame />
-    <ChatInput />
+<div class="w-full h-full    flex flex-col">
+    <div class="flex-grow">
+        <ChatFrame />
+    </div>
+
+    <div class="my-6">
+        <ChatInput />
+    </div>
 </div>
